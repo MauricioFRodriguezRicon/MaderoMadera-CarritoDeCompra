@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Resumen del contenido de la página">
+    <title>Madero Madera Muebleria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="Index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+</head>
+
+<body>
+        <h1 id="titulo" class="display-1">Muebleria Madero Madera</h1>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item"><a href="#quienesSomos" class="nav-link">¿Quienes Somos?</a></li>
+                <li class="nav-item"><a href="#catalogo" class="nav-link">Catalogo</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="Index_Carrito.html" class="nav-link" target="_blank"><img src="/assetsCarrito/Carrito" alt="Ver carrito" width="50"></a></li>
+            </ul>
+
+
+            <div id="quienesSomos" class="container text-center">
+            <p>
+                Madero Madera es una muebleria familiar que diseña muebles por encargo. 
+                <br>
+                Somos fabricantes y distribuidores. Para encargos con medidas especificas se encuentran los medios de contacto al final de la pagina.
+            </p>
+        </div>
+
+
+    <div class="container text-center" id="catalogo">
+        <div class="row">
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/Sommier" alt="Imagen Colchon sommier" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <div class="texto">
+                        <p>Sommier 2 1/2 plazas $75000</p>
+                    </div>
+                    <input id="C1" type="number" class="form-control" value="1" onchange="verificarValor('C1')">
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Colchon',75000,'C1')">+</button>
+                </div>
+            </div>
+            
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/BoxSommier" alt="Imagen Box sommier" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Box Sommier 2 1/2 $40000</p>
+                    <input id="C2" type="number" class="form-control" value="1" onchange="verificarValor('C2')">
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Cajon sommier',40000,'C2')">+</button>
+                </div>
+            </div>
+
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/Almohadon" alt="Imagen Almohadon" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Almohadon $1500</p>
+                <input id="C3" type="number" class="form-control" value="1" onchange="verificarValor('C3')">
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Almohadon',1500,'C3')">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/MesaDeLuz" alt="Imagen Mesa de luz" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto"> 
+                    <p>Mesa De Luz 50x40x60cm $19000</p>
+                    <input id="C4" type="number" class="form-control" value="1" onchange="verificarValor('C4')">
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Mesa de luz',19000,'C4')">+</button>
+                </div>
+            </div>
+
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/Placard" alt="Imagen Placard" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Placard 190x150x30cm $90000</p>
+                    <input id="C5" type="number" class="form-control" value="1" onchange="verificarValor('C5')">
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Placard',90000,'C5')">+</button>
+                </div>
+            </div>
+
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/Chiffonier" alt="Imagen Chiffonier" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <div class="texto">
+                        <p>Chiffonier 60x35x130cm $84000</p>
+                    </div>
+                    <input id="C6" type="number" class="form-control" value="1" onchange="verificarValor('C6')">
+                    <button class="btn btn-primary" onclick="agregarAlCarrito('Chiffonier',84000,'C6')">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/Silla" alt="Imagen Silla" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Silla 45x45x90cm $20000</p>
+                <input id="C7" type="number" class="form-control" value="1" onchange="verificarValor('C7')">
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Silla',20000,'C7')">+</button>
+                </div>
+            </div>
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/MesaExtensible" alt="Imagen Mesa Extensible" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Mesa Extensible $60000</p>
+                <input id="C8" type="number" class="form-control" value="1" onchange="verificarValor('C8')">
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Mesa',60000,'C8')">+</button>
+                </div>
+            </div>
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/Sofa" alt="Imagen Sofa de cuero" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Sofa de cuero 3 cuerpos $120000</p>
+                <input id="C9" type="number" class="form-control" value="1" onchange="verificarValor('C9')">
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Sofa',120000,'C9')">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/MesaRatona" alt="Imagen Mesa Ratona" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Mesa Ratona 100x60x42cm $40000</p>
+                <input id="C10" type="number" class="form-control" value="1" onchange="verificarValor('C10')">
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Mesa Ratona',40000,'C10')">+</button>
+                </div>
+            </div>
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/Comoda" alt="Imagen Comoda" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Comoda 100x45x78cm $70000</p>
+                <input id="C11" type="number" class="form-control" value="1" onchange="verificarValor('C11')">
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Comoda',70000,'C11')">+</button>
+                </div>
+            </div>
+            <div class="col" class="tarjeta">
+                <img src="/assetsCarrito/Banqueta" alt="Imagen Banqueta" class="imagenTarjeta" height="400px">
+                <div class="tarjetaTexto">
+                    <p>Banqueta 30x30x80cm $10000</p>
+                <input id="C12" type="number" class="form-control" value="1" onchange="verificarValor('C12')"> 
+                <button class="btn btn-primary" onclick="agregarAlCarrito('Banqueta',10000,'C12')">+</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contacto">
+        <p>Si queres podes contactarnos al telefono: +549221440536 <br> O a cualquiera de nuestras redes sociales:</p>
+        <a href="https://wa.link/7wvt7t" target="_blank" rel="noopener noreferrer"><img src="/assetsCarrito/icono_Whatsapp" alt="Icono Whatsapp" width="50"></a>
+        <a href="https://www.instagram.com/mauri030901/" target="_blank" rel="noopener noreferrer"><img src="/assetsCarrito/icono_Instagram" alt="Icono Instagram" width="50"></a>
+        <a href="https://www.facebook.com/mauriciofernando.rodriguezricon" target="_blank" rel="noopener noreferrer"><img src="/assetsCarrito/icono_Facebook" alt="Icono Facebook" width="50"></a> 
+
+    </div>
+</body>
+<script src="Index.js"></script>
+
+</html>

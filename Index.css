@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: whitesmoke;
+}
+
+body{
+    background-color: rgba(47,49,49,1);
+}
+
+#titulo{
+    text-align: center;
+    text-justify:auto;
+    text-shadow: 8px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.contenedor{
+    padding: 10%;
+}
+
+ul{
+    display:inline-flex;
+    text-decoration: none;
+    border-color: darkslategrey;
+    background-color: grey;
+}
+ul li{
+    padding: auto;
+    margin: 10px;
+    text-align: center;
+    text-justify: auto;
+    text-decoration-style: none;
+    text-decoration: none;
+    border-radius: 20px;
+    border-color: darkslategrey;
+    background-color: darkgray;
+}
+
+ul li img{
+    background-color: darkgray;
+}
+
+.imagenTarjeta{
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+}
+
+
+img{
+    object-fit: cover;
+    justify-content: center;
+}
+
+
+.tarjetaTexto{
+    display: inline-flex;
+    padding: 8%;
+}
+
+.tarjetaTexto .texto{
+    font-size: large;
+    background-color: rgba(47,49,49,1);
+}
+
+
+#quienesSomos{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size:xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}   
+
+#contacto{
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:oblique;
+    display: inline-flexbox;
+    background-color:grey;
+}
+
+
+#contacto p{
+    background-color: grey;
+}
